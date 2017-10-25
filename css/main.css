@@ -1,0 +1,50 @@
+/*ayuda que se respete todo lo que yo voy a aplicar abajo*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  /* seudo elemento , una regla de seudoelemento es que se le aplique (content)*/
+.title::after{
+  content:'';
+  /*trabajar con porcentaje ayuda a que se acomode, quiere decir que deacuerdo a lo manipulado se va a modificar*/
+  width: 10%;
+  height: 5px;
+  background-color: #303030;
+  display: block;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  /* se usa cualquier de los dos casos, lo que busca es centralo usando los lados.
+  margin-right: auto;
+  margin-left: auto;*/
+
+}
+.title{
+  margin:10px;
+}
+figure{
+  width: 300px;
+  height: 300px;
+  background-color: #f7b617;
+  /*para que se arregle y no ocupe todo como contenedor*/
+  display:inline-block;
+
+  position:relative;
+  margin:10px;
+}
+
+figure p{
+  /*si se le aplica un absolute formatea todo elm flujo y si quiero colocar el texto en centro con text-aling no va a hacer caso*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #303030;
+  color:#fff;
+  line-height: 1.5;
+}
